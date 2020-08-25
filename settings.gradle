@@ -1,0 +1,29 @@
+rootProject.name = 'adapter-example'
+
+include ':application'
+include ':domain'
+include ':usecase'
+
+include ':file-reader'
+include ':file-to-matrix'
+
+include ':matrix-randomizer'
+include ':random-to-matrix'
+
+include ':file-writer'
+include ':matrix-to-file'
+
+
+project(":application").projectDir = file("module/application")
+project(":domain").projectDir = file("module/inner/domain")
+project(":usecase").projectDir = file("module/inner/usecase")
+
+project(":file-reader").projectDir = file("module/foreign/file-reader")
+project(":file-to-matrix").projectDir = file("module/adapter/file-to-matrix")
+
+project(":matrix-randomizer").projectDir = file("module/foreign/matrix-randomizer")
+project(":random-to-matrix").projectDir = file("module/adapter/random-to-matrix")
+
+project(":file-writer").projectDir = file("module/foreign/file-writer")
+project(":matrix-to-file").projectDir = file("module/adapter/matrix-to-file")
+

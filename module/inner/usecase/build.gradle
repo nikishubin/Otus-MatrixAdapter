@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.matrix.usecase'
+
+dependencies {
+    implementation project(':domain')
+
+    implementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}

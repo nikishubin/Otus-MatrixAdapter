@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.matrix.application'
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':usecase')
+
+    implementation project(':file-reader')
+    implementation project(':file-to-matrix')
+
+    implementation project(':matrix-randomizer')
+    implementation project(':random-to-matrix')
+
+    implementation project(':file-writer')
+    implementation project(':matrix-to-file')
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}

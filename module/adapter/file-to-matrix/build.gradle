@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.adapter.file-to-matrix'
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':usecase')
+    implementation project(':file-reader')
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}

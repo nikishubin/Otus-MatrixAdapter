@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+ext.moduleName = 'otus.adapter.random-to-matrix'
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':usecase')
+    implementation project(':matrix-randomizer')
+
+    implementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
+
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${jupiterVersion}"
+}
