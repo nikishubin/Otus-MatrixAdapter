@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.otus.patterns.adapter.external.randomizer.impl.MatrixRandomizer</OriginalElement>
+  <nodes>
+    <node x="1424.91015625" y="180.0">ru.otus.patterns.adapter.usecase.ports.MatrixOutput</node>
+    <node x="846.8502604166667" y="0.0">ru.otus.patterns.adapter.domain.Matrix</node>
+    <node x="794.9101562500001" y="180.0">ru.otus.patterns.adapter.external.reader.FileReader</node>
+    <node x="1678.17578125" y="339.0">ru.otus.patterns.adapter.external.writer.impl.OutputStreamWriter</node>
+    <node x="949.984375" y="339.0">ru.otus.patterns.adapter.external.reader.impl.FileStreamReader</node>
+    <node x="196.0" y="317.0">ru.otus.patterns.adapter.random.RandomToMatrix</node>
+    <node x="466.5924479166668" y="169.0">ru.otus.patterns.adapter.usecase.ports.MatrixInput</node>
+    <node x="125.16666666666674" y="180.0">ru.otus.patterns.adapter.external.randomizer.MultidimensionalRandomizer</node>
+    <node x="959.9101562500001" y="158.0">ru.otus.patterns.adapter.usecase.MatrixMathematicalOperations</node>
+    <node x="590.0" y="306.0">ru.otus.patterns.adapter.file.to.matrix.FileToMatrix</node>
+    <node x="1629.3268229166667" y="180.0">ru.otus.patterns.adapter.external.writer.FileWriter</node>
+    <node x="0.0" y="339.0">ru.otus.patterns.adapter.external.randomizer.impl.MatrixRandomizer</node>
+    <node x="1514.17578125" y="339.0">ru.otus.patterns.adapter.matrix.to.file.MatrixToFile</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.otus.patterns.adapter.random.RandomToMatrix" target="ru.otus.patterns.adapter.external.randomizer.MultidimensionalRandomizer">
+      <point x="-140.25" y="-49.0" />
+      <point x="242.75" y="286.0" />
+      <point x="253.16666666666674" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.matrix.to.file.MatrixToFile" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="-18.0" y="-27.0" />
+      <point x="1568.17578125" y="286.0" />
+      <point x="1579.41015625" y="286.0" />
+      <point x="1579.41015625" y="118.0" />
+      <point x="1039.3502604166667" y="118.0" />
+      <point x="87.5" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.random.RandomToMatrix" target="ru.otus.patterns.adapter.usecase.ports.MatrixInput">
+      <point x="140.25" y="-49.0" />
+      <point x="523.25" y="286.0" />
+      <point x="507.8424479166668" y="286.0" />
+      <point x="-41.25" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.usecase.ports.MatrixOutput" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="0.0" y="-27.0" />
+      <point x="1496.91015625" y="128.0" />
+      <point x="1004.3502604166667" y="128.0" />
+      <point x="52.5" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.matrix.to.file.MatrixToFile" target="ru.otus.patterns.adapter.usecase.ports.MatrixOutput">
+      <point x="-54.0" y="-27.0" />
+      <point x="1532.17578125" y="286.0" />
+      <point x="1496.91015625" y="286.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.file.to.matrix.FileToMatrix" target="ru.otus.patterns.adapter.usecase.ports.MatrixInput">
+      <point x="-106.875" y="-60.0" />
+      <point x="625.625" y="286.0" />
+      <point x="590.3424479166667" y="286.0" />
+      <point x="41.25" y="38.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.usecase.ports.MatrixInput" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="-1.1368683772161603E-13" y="-38.0" />
+      <point x="549.0924479166667" y="128.0" />
+      <point x="899.3502604166667" y="128.0" />
+      <point x="-52.5" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.random.RandomToMatrix" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="46.75" y="-49.0" />
+      <point x="429.75" y="286.0" />
+      <point x="450.625" y="286.0" />
+      <point x="450.625" y="118.0" />
+      <point x="864.3502604166667" y="118.0" />
+      <point x="-87.5" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.external.reader.impl.FileStreamReader" target="ru.otus.patterns.adapter.external.reader.FileReader">
+      <point x="0.0" y="-27.0" />
+      <point x="1037.984375" y="286.0" />
+      <point x="915.7434895833335" y="286.0" />
+      <point x="48.33333333333337" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.matrix.to.file.MatrixToFile" target="ru.otus.patterns.adapter.external.writer.FileWriter">
+      <point x="18.0" y="-27.0" />
+      <point x="1604.17578125" y="276.0" />
+      <point x="1652.66015625" y="276.0" />
+      <point x="-46.66666666666666" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.external.writer.impl.OutputStreamWriter" target="ru.otus.patterns.adapter.external.writer.FileWriter">
+      <point x="0.0" y="-27.0" />
+      <point x="1774.17578125" y="286.0" />
+      <point x="1745.9934895833335" y="286.0" />
+      <point x="46.66666666666663" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.file.to.matrix.FileToMatrix" target="ru.otus.patterns.adapter.external.reader.FileReader">
+      <point x="35.625" y="-60.0" />
+      <point x="768.125" y="286.0" />
+      <point x="819.0768229166667" y="286.0" />
+      <point x="-48.33333333333337" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.usecase.MatrixMathematicalOperations" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="0.0" y="-49.0" />
+      <point x="1182.41015625" y="138.0" />
+      <point x="969.3502604166667" y="138.0" />
+      <point x="17.5" y="49.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.external.randomizer.impl.MatrixRandomizer" target="ru.otus.patterns.adapter.external.randomizer.MultidimensionalRandomizer">
+      <point x="0.0" y="-27.0" />
+      <point x="88.0" y="286.0" />
+      <point x="167.83333333333348" y="286.0" />
+      <point x="-85.33333333333326" y="27.0" />
+    </edge>
+    <edge source="ru.otus.patterns.adapter.file.to.matrix.FileToMatrix" target="ru.otus.patterns.adapter.domain.Matrix">
+      <point x="-35.625" y="-60.0" />
+      <point x="696.875" y="286.0" />
+      <point x="726.625" y="286.0" />
+      <point x="726.625" y="138.0" />
+      <point x="934.3502604166667" y="138.0" />
+      <point x="-17.5" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="935.5" y="213.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
