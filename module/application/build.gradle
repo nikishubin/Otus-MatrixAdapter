@@ -1,6 +1,11 @@
-apply plugin: 'java-library'
+apply plugin: 'application'
 
 ext.moduleName = 'otus.matrix.application'
+
+application {
+    setProperty('mainModule', 'otus.matrix.application')
+    setProperty('mainClass', 'ru.otus.patterns.adapter.application.FromFileApplication')
+}
 
 dependencies {
     implementation project(':domain')

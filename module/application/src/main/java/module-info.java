@@ -1,4 +1,4 @@
-module otus.matrix.applicaition {
+module otus.matrix.application {
 
     requires otus.matrix.domain;
     requires otus.matrix.usecase;
